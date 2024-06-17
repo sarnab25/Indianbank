@@ -1,0 +1,21 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+  <body>
+    <h1><b>List of all Banks</b></h1>
+    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+      <% for(name of names) {%>
+        <div class="card text-center">
+          <div class="card-header">
+            Bank Name
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= name %>
+            </h5>
+
+          </div>
+        </div>
+
+        <% }%>
+    </div>
+  </body>
