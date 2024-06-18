@@ -9,7 +9,7 @@ const ejsMate= require("ejs-mate");
 
 //connection with database using mongoose library
 // const MONGO_URL = "mongodb://127.0.0.1:27017/IndiaBank";  // for localhost
-const dbUrl=process.env.ATLASDB_URL;                  // coonecting the database with MongoDB Atlas to deploy the data online
+const dbUrl=process.env.ATLASDB_URL;                 // coonecting the database with MongoDB Atlas to deploy the data online
            
 main()
   .then(() => {
